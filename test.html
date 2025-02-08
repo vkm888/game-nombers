@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Динамічний час</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+#time-container {
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Поточний час:</h1>
+<div id="time-container"></div>
+
+<script>
+function updateTime() {
+  const now = new Date();
+  const timeString = now.toLocaleDateString() + ' ' + now.toLocaleTimeString();
+
+  const timeElement = document.createElement('p');
+  timeElement.textContent = timeString;
+
+  // Генеруємо випадковий колір
+  const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  timeElement.style.color = randomColor;
+
+  document.getElementById('time-container').appendChild(timeElement);
+}
+
+// Оновлюємо час кожні 3 секунди
+setInterval(updateTime, 3000);
+
+// Виводимо початковий час при завантаженні сторінки
+updateTime();
+</script>
+
+</body>
+</html>
