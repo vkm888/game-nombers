@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- ICO сайту -->
+    <link rel="shortcut icon" href="/images/sun192x162.png" type="image/png">
+    <title>Game JavaScript</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>   
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  </head>
+  <body>
+
+    <!-- navbar content here  -->  
+    <div class="navbar-fixed" onclick="openNav()">
+      <nav id="navbar">
+        <div class="nav-wrapper container">
+          <a href="index.html" class="brand-logo" id="logo">vkm.ltd.ua</a>
+          <!-- <a href="index.html" class="brand-logo" id="logo">vkm.ltd.ua</a> -->
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <!-- <a href="#" data-target="slide-out" class="sidenav-trigger" onclick="openNavr()"><i class="material-icons">menu</i></a> -->
+          <ul class="right hide-on-med-and-down">
+            <!-- <li><a class="waves-effect" href="excel.html">Excel</a></li>
+            <li><a class="waves-effect" href="vba.html">VBA</a></li>
+            <li><a class="waves-effect" href="sql.html">SQL</a></li>
+            <li><a class="waves-effect" href="olap.html">OLAP</a></li>
+            <li><a class="waves-effect" href="powerbi.html">Power Bi</a></li>
+            <li><a class="waves-effect" href="1c.html">1C</a></li>
+            <li><a class="waves-effect" href="www.html">www</a></li>
+            <li><a class="waves-effect" href="youtube.html">YouTube</a></li> -->
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- slide-out   все li задублировать ниже    -->
+    <ul id="slide-out" class="sidenav">
+      <li> <h4> vkm.ltd.ua</h4></li>
+        <li> <hr></li>
+        <li><a class="waves-effect" href="excel.html">Excel</a></li>
+        <li><a class="waves-effect" href="vba.html">VBA</a></li>
+        <li><a class="waves-effect" href="sql.html">SQL</a></li>
+        <li><a class="waves-effect" href="olap.html">OLAP</a></li>
+        <li><a class="waves-effect" href="powerbi.html">Power Bi</a></li>
+        <li><a class="waves-effect" href="1c.html">1C</a></li>
+        <li><a class="waves-effect" href="www.html">www</a></li>
+        <li><a class="waves-effect" href="youtube.html">YouTube</a></li>
+    </ul>
+    <!-- end NavBar  -->
+
+    <!-- Fullscreen Overlay Nav Example -->
+    <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+    <div id="myNav" class="overlay" onclick="closeNav()">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content flow-text">
+        <a href="index.html">в начало</a>
+        <a href="excel.html">Excel</a>
+        <a href="vba.html">VBA</a>
+        <a href="sql.html">SQL</a>
+        <a href="olap.html">OLAP</a>
+        <a href="powerbi.html">Power Bi</a>
+        <a href="1c.html">1C</a>
+        <a href="www.html">www</a>
+        <a href="youtube.html">YouTube</a>
+      </div>
+    </div>
+
+
+    <div>
+      <img src="/images/cod.jpg" width="100%"  alt="mac">
+    </div>
+
+    <div class="container">
+
+
+      <div class="content flow-text">
+        <h2>www</h2>         
+        <p>Test Game JavaScript</p>
+      </div>
+
+      <div class="vkm-art-grey">
+        <div class="row container">
+          <div class="col s12 m6 center">
+            <p><a href="game.html"><img class="circle" src="images/gamenumbers3x3.jpg" width="50%" alt="gamenumbers"></a></p>
+          </div>
+          <div class="col s12 m6">
+            <H1 class="left">Гра на JavaScript</H1>
+            <br>
+            <p class="left flow-text">у грі ви повинні обчислити цифру, яку склавши з відомими буде вірний підсумок
+              <a href="game.html">Перейти...</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- <div class="vkm-art-grey">
+        <div class="row container">
+          <div class="col s12 m6 center">
+            <p><a href="game.html"><img class="circle" src="images/www.jpg" width="50%" alt="gamenumbers"></a></p>
+          </div>
+          <div class="col s12 m6">
+            <H1 class="left">JavaScript дізнатися IP</H1>
+            <br>
+            <p class="left flow-text"> як отримувати в Javascript дані від сервера за допомогою запитів HTTP
+              <a href="ip.html">Перейти...</a>
+            </p>
+          </div>
+        </div>
+      </div> -->
+      
+      <div>
+        <img src="images/www.jpg" width="100%" height="25%"  alt="forever">
+      </div>
+
+    </div>   
+
+    <!-- arrow_upward          present_to_all -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="material-icons flow-text">navigation</button>
+
+    <!-- Footer darken-4 Start -->
+    <footer class="grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">Мої напрацювання.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="http://vkm.ltd.ua/" target="blan">vkm.ltd.ua</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="footer-copyright"> -->
+      <div class="container grey-text text-lighten-4 center">
+        © 2020 Copyright Калюта Віктор
+      </div>
+      <!-- </div> -->
+    </footer>
+    <!-- Footer darken-4 End -->
+
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+</html>
