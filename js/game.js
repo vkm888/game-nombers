@@ -26,7 +26,7 @@ function statistOk(){
     $tablo3.textContent = $vkm.textContent
     $numtotal3.textContent = $numtotal.textContent
     $time3.textContent = $time2.textContent
-    $molodec.textContent = 'молодесь.'
+    $molodec.textContent = 'красава.'
     $itogi.insertAdjacentHTML('afterend', $itogi.textContent + '<br>')
 }
 function statistBad(){
@@ -35,7 +35,7 @@ function statistBad(){
     $tablo3.textContent = $vkm.textContent
     $numtotal3.textContent = $numtotal.textContent
     $time3.textContent = $time2.textContent
-    $molodec.textContent = 'не в этот раз, вышло время.'
+    $molodec.textContent = 'не цього разу, вийшов час.'
     $itogi.insertAdjacentHTML('afterend', $itogi.textContent + '<br>')
 }
  
