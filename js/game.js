@@ -1,3 +1,5 @@
+// 2025.02.09 /Kaliuta Viktor/
+// document.addEventListener('DOMContentLoaded', function() {
 // елементи нода $
 var $start = document.querySelector('#start')
 var $win = document.querySelector('#win')
@@ -11,7 +13,7 @@ var $fixblock = document.getElementById('fixblock')
 var $numone = document.querySelector('#numone')
 var $numtotal = document.querySelector('#numtotal')
 var $vkm = document.querySelector('#vkm')
-var score = 1
+var score = 0
 // для статистики
 var $numpop3 = document.querySelector('#numpop3')
 var $numone3 = document.querySelector('#numone3')
@@ -20,23 +22,39 @@ var $numtotal3 = document.querySelector('#numtotal3')
 var $time3 = document.querySelector('#time3')
 var $molodec = document.querySelector('#molodec')
 
+// function stylizeElement(element, color) {
+//     element.style.color = color;
+// }
+
 function statistOk(){
     $numpop3.textContent = score++
     $numone3.textContent = $numone.textContent
     $tablo3.textContent = $vkm.textContent
     $numtotal3.textContent = $numtotal.textContent
     $time3.textContent = $time2.textContent
-    $molodec.textContent = 'красава.'
-    $itogi.insertAdjacentHTML('afterend', $itogi.textContent + '<br>')
+    // $molodec.textContent = 'красава.'
+    // $itogi.insertAdjacentHTML('afterend', $itogi.textContent + '<br>')
+    const itogi = document.getElementById('itogi');
+    const newRecord = document.createElement('p');
+    newRecord.textContent = `(${score}) - ${$numone.textContent} + ${$vkm.textContent} = ${$numtotal.textContent}, витратив ${$time2.textContent} сек, красава!`;
+    newRecord.style.color = 'grey'; // Встановлюємо колір для нового запису
+    itogi.appendChild(newRecord); // Або itogi.prependChild(newRecord);
 }
 function statistBad(){
-    $numpop3.textContent = score++
-    $numone3.textContent = $numone.textContent
-    $tablo3.textContent = $vkm.textContent
-    $numtotal3.textContent = $numtotal.textContent
-    $time3.textContent = $time2.textContent
-    $molodec.textContent = 'не цього разу, вийшов час.'
-    $itogi.insertAdjacentHTML('afterend', $itogi.textContent + '<br>')
+    $numpop3.textContent = score++;
+    $numone3.textContent = $numone.textContent;
+    $tablo3.textContent = $vkm.textContent;
+    $numtotal3.textContent = $numtotal.textContent;
+    $time3.textContent = $time2.textContent;
+    // $molodec.style.color = "red"; // !important
+    // $molodec.textContent= 'не встиг.';
+    // console.log("statistBad() викликано");
+    // $itogi.insertAdjacentHTML('afterend', $itogi.textContent + '<br>');
+    const itogi = document.getElementById('itogi');
+    const newRecord = document.createElement('p');
+    newRecord.textContent = `(${score}) - ${$numone.textContent} + ${$vkm.textContent} = ${$numtotal.textContent}, витратив ${$time2.textContent} сек, не встиг.`;
+    newRecord.style.color = 'red'; // Встановлюємо червоний колір для нового запису
+    itogi.appendChild(newRecord); // Або itogi.prependChild(newRecord);
 }
  
 // значення за замовчуванням
@@ -184,3 +202,4 @@ function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
 }
 
+// });
