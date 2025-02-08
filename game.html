@@ -10,8 +10,10 @@
 </head>
 <body>
     <div id="fixblock" class="fixblock">
-        <a href="index.html"><img src="images/vkm.ltd.png" alt="vkm"></a>
+        <!-- закоментував піднімання картинки vkm.ltd.png, але залишив id="fixblock" щоб не правити в game.js-->
+        <!-- <a href="index.html"><img src="images/vkm.ltd.png" alt="vkm"></a> -->
     </div>
+
     <!-- <div id="win"  class="overlay" style="display: none; background-color: rgba(51, 83, 223, 0.9)" onclick="closeNav()"> -->
     <div id="win"  class="overlay">
         <div class="start" style="background-color: rgba(51, 83, 223, 1)" id="blink-2">КРАСАВА !!!
@@ -28,7 +30,7 @@
 
     <div class="bigcont">
         <div class="container2">
-            <div style="font-size: 4vw">Час роздумів: <span id="time">9.9</span></div>
+            <div style="font-size: 4vw">10 сек на роздуми: <span id="time">9.9</span></div>
             <div class="qw">додай до <span id="numone">103</span></div>
             <div type="number" class="tablo">0</div>
             <div class="total">щоб отримати <span id="numtotal">185</span></div>
@@ -52,19 +54,22 @@
         </div>
         <br>
         <br>
-        <div id="ip">IP</div>
+        <!-- <div id="ip">IP</div> -->
         <div>За підсумком:</div>
         <hr>
-        <div id="itogi" class="hide">
-            (<span id="numpop3">0</span>) - 
-            знаючи <span id="numone3">0</span>, 
-            обчислював <span id="tablo3">0</span>, 
-            від підсумку <span id="numtotal3">0</span>, 
-            витративши <span id="time3">0</span> сек,
+        <div id="itogi" >
+           <p style="color:greenyellow" class="hide">
+            (<span id="numpop3">0</span>) -  
+             <span id="numone3">0</span> +     <!-- знаючи -->
+             <span id="tablo3">0</span> =      <!-- вираховував -->
+             <span id="numtotal3">0</span>,    <!-- та підсумок -->
+             витратив <span id="time3">0</span> сек,
              <span id="molodec"> да</span>
+            </p>
         </div>
+
         <hr>
-        <div style="color: rgb(188, 189, 192);"><span id="vkm">0</span><a style="color: rgb(188, 189, 192);" href="index.html">вернуться на сайт</a></div>
+        <div style="color: rgb(188, 189, 192);"><span id="vkm">0</span><a style="color: rgb(188, 189, 192);" href="index.html">повернутись на сайт</a></div>
     </div>
     
     <!-- <script src="js/ip.js"></script> -->
